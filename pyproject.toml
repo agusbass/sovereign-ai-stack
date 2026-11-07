@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sovereign-ai-stack"
+version = "2.0.0"
+description = "Modular AI architecture: TEG, REA, DGA, AON, PTT, and NLSI"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = [
+    "torch>=2.0.0,<3.0.0",
+    "numpy>=1.24.0,<3.0.0",
+    "matplotlib>=3.7.0,<4.0.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["sovereign_ai_stack*"]
